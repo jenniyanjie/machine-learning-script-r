@@ -14,7 +14,7 @@ library(lubridate)
 library(ggplot2)
 
 
-dt <- data.table(read.csv(file="../data/train",head=TRUE,sep=","))
+dt <- data.table(read.csv(file="./data/train.truncated",head=TRUE,sep=","))
 dt[is.na(dt)] <- 'na'
 
 # remove the column 'id' from predictor because id is unique to each row
